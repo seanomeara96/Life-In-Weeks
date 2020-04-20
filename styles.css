@@ -1,5 +1,6 @@
 *{
   box-sizing:border-box;
+  scroll:none;
 }
 html,body{
   height:100%;
