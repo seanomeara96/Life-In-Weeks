@@ -15,3 +15,43 @@ html,body{
   grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
+.form {
+  box-shadow: 0 .3px 9px .2px rgba(0,0,0,.3);
+  border-radius:.25rem;
+  padding:1rem;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform-origin:50% 50%;
+  transform:translate(-50%, -25%) scale(1.4);
+  opacity:0;
+  transition:all .3s ease-in;
+  visibility:hidden;
+}
+.form--is-visible{
+  opacity:1;
+  visibility:visible;
+  transform:translate(-50%, -25%) scale(1);
+}
+.prompt{
+  margin:1rem;
+}
+.prompt__label{
+  display:inline-block;
+  margin-bottom:.3rem;
+}
+.prompt__input{
+  margin-bottom:.6rem;
+  border:none;
+  background-color:rgba(0,0,0,.1);
+  padding:.3rem;
+}
+.prompt__btn{
+  border-radius:.25rem;
+  border:none;
+  padding:.3rem .5rem;
+  background-color:rgba(0,255,0,.3);
+  color:rgb(0,200,0);
+  font-weight:700;
+  box-shadow:0 0px 1px .2px rgba(0,200,0,.5);
+}
